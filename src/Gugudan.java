@@ -3,6 +3,9 @@ import java.util.*;
 public class Gugudan {
 
 	public static void main(String [] args) {
+		
+	int i=1;
+	
 	System.out.print("구구단 총 출력할 단은?");
 	Scanner scanner = new Scanner(System.in);
 	int number = scanner.nextInt();
@@ -31,5 +34,19 @@ public class Gugudan {
 	System.out.println(number*7);
 	System.out.println(number*8);
 	System.out.println(number*9);
-	}
+	
+	// while 문을 활용한 6단
+	System.out.print("몇 단을 할것인가요?");
+	number = scanner.nextInt();
+	while(i<10) {
+		System.out.println(number*i);
+		i++;
+		}
+	// for 문을 활용한 7단
+	System.out.print("몇 단을 할것인가요?");
+	number = scanner.nextInt();
+	for(i=1;i<10;i++) {
+		System.out.println(number*i);
+		}
+	}	
 }
