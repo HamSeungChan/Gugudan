@@ -49,20 +49,34 @@ public class Gugudan {
 //		System.out.println(number*i);
 //		} 
 
-		Scanner scanner = new Scanner(System.in);
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		System.out.print("몇 단을 출력할건가요?");
+//		int number = scanner.nextInt();
+//		
+//		if(number<2 || number>9) {
+//			System.out.println("2단과 9단 사이만 입력이 가능합니다");
+//		}
+//		
+//		else {
+//		System.out.println(number+"단을 출력하겠습니다");
+//		for(int i=1;i<10;i++) {
+//				System.out.println(number+"x"+i+"="+number*i);
+//			}
+//		}
 		
-		System.out.print("몇 단을 출력할건가요?");
-		int number = scanner.nextInt();
+		int[] result = new int[9];
+		System.out.println(result.length);
 		
-		if(number<2 && number>9) {
-			System.out.println("2단과 9단 사이만 입력이 가능합니다");
-		}
-		
-		else {
-		System.out.println(number+"단을 출력하겠습니다");
-		for(int i=1;i<10;i++) {
-				System.out.println(number+"x"+i+"="+number*i);
+		for(int number=2;number<10;number++) {
+			for(int i=0;i<result.length;i++) {
+				result[i] = number*(i+1);
 			}
+			for(int i=0;i<result.length;i++) {
+				System.out.println(result[i]);
+			}
+		
 		}
+	
 	}	
 }
